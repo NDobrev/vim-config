@@ -93,6 +93,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Martin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
   },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "C:\\Users\\Martin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "C:\\Users\\Martin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline-themes"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "C:\\Users\\Martin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive"

@@ -18,6 +18,8 @@ set noshowmode
 set signcolumn=yes
 set isfname+=@-@
 set smartcase
+set ve+=onemore
+
 " set ls=0
 
 " Give more space for displaying messages.
@@ -28,7 +30,7 @@ set cmdheight=1
 set updatetime=50
 
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+"set shortmess+=c
 
 set colorcolumn=120
 
@@ -38,6 +40,8 @@ augroup packer_user_config
   autocmd BufWritePost plugins.lua source <afile> | PackerCompile
 augroup end
 
+let g:airline_powerline_fonts = 1
+
 set bg=dark
 colorscheme gruvbox
 
@@ -46,5 +50,11 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>qq <cmd>:wq<cr>
+inoremap js <ESC>
+nnoremap ; <right>
+nnoremap l <left>
+nnoremap j <up>
+nnoremap k <down>
 
 nnoremap <c-z> <nop>
