@@ -92,6 +92,10 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Martin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "C:\\Users\\Martin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive"
   }
 }
 
