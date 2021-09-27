@@ -21,6 +21,8 @@ set isfname+=@-@
 set smartcase
 set ve+=onemore
 set spell spelllang=en_us
+set list
+set listchars=tab:>·,space:·
 " set ls=0
 
 " Give more space for displaying messages.
