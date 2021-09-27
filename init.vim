@@ -4,6 +4,7 @@ set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
+set autoindent
 set expandtab
 set smartindent
 set nu
@@ -19,7 +20,7 @@ set signcolumn=yes
 set isfname+=@-@
 set smartcase
 set ve+=onemore
-
+set spell spelllang=en_us
 " set ls=0
 
 " Give more space for displaying messages.
@@ -41,6 +42,32 @@ augroup packer_user_config
 augroup end
 
 let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 set bg=dark
 colorscheme gruvbox
@@ -51,6 +78,8 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>qq <cmd>:wq<cr>
+nnoremap <leader>ee <cmd>highlight SpellBad ctermfg=009 ctermbg=011 guifg=#ff0000 guibg=#ffff00<cr>
+nnoremap <leader>ed <cmd>highlight clear SpellBad<cr>
 inoremap js <ESC>
 nnoremap ; <right>
 nnoremap l <left>
